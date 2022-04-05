@@ -1,10 +1,13 @@
-# Getting Started with Create React App
+# Smart Watch Analysis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Demo: [Smart-Watch-Analysis](https://smart-watch-analysis.netlify.app/).
 
-## Available Scripts
+## Four Reasons Why you Should visit our website
 
-In the project directory, you can run:
+* You can find Best Smart Watch according to your criteria
+* You can see review of the people who use our service
+* You can see different types of chart which amazed you
+* You can contact us through form easily
 
 ### `npm start`
 

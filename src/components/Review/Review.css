@@ -1,4 +1,9 @@
-.custom {
-  background-color: brown;
-  height: 400px;
+.main-review-container {
+  /* border: 1px solid sandybrown; */
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

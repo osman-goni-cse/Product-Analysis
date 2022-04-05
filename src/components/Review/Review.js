@@ -1,12 +1,45 @@
 import React from "react";
-import './Review.css'
+import "./Review.css";
 
 const Review = (props) => {
-  const {name, comment} = props.review;
+  const { name, comment } = props.review;
   // console.log(props);
 
   return (
-    <div className="col custom">
+    <div className="col main-review-container">
+      <div className="review-container">
+        <strong>{name}</strong>
+        <div className="rating">
+          <span className="float-right">
+            <i className="text-warning fa fa-star"></i>
+          </span>
+          <span className="float-right">
+            <i className="text-warning fa fa-star"></i>
+          </span>
+          <span className="float-right">
+            <i className="text-warning fa fa-star"></i>
+          </span>
+          <span className="float-right">
+            <i className="text-warning fa fa-star"></i>
+          </span>
+          <span className="float-right">
+            <i className="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div className="comment-review">
+        <br></br>
+        <p>{comment}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Review;
+
+/*
+
+<div className="col custom">
       <div className="card">
         <div className="card-body">
           <div className="row">
@@ -50,7 +83,4 @@ const Review = (props) => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default Review;
+*/

@@ -8,7 +8,7 @@ const Blogs = () => {
 
       <p><strong>Question-2: </strong> Describe Semantic tag.</p>
 
-      <p><strong>Answer:</strong> Semantic elements are element which is meaningful for browser as well as developer.Search Engines are able to understand website content when we use semantic elements in HTML.Examples of the Semantic elements are:
+      <div><strong>Answer:</strong> Semantic elements are element which is meaningful for browser as well as developer.Search Engines are able to understand website content when we use semantic elements in HTML.Examples of the Semantic elements are:
         <ul>
           <li>&lt;article&gt;</li>
           <li>&lt;header&gt;</li>
@@ -16,7 +16,7 @@ const Blogs = () => {
           <li>&lt;main&gt;</li>
         </ul>
         and so on. Sematic elements are easier to read.It has greater accessibility.
-      </p>
+      </div>
 
     </div>
   );

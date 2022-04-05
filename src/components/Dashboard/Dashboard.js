@@ -11,6 +11,7 @@ import {
   Label,
 } from "recharts";
 import React from "react";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   const data = [
@@ -53,38 +54,45 @@ const Dashboard = () => {
   ];
   return (
     <div className="mt-5 d-flex">
-      <LineChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
-      >
-        <Line type="monotone" dataKey="sell" stroke="#8884d8" />
-        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-        <XAxis dataKey="month" />
-        <YAxis dataKey="sell" />
-        <Tooltip />
-      </LineChart>
+      <div>
+        <p className="title-color">Month Wise Sell</p>
+        <LineChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
+        >
+          <Line type="monotone" dataKey="sell" stroke="#8884d8" />
+          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+          <XAxis dataKey="month" />
+          <YAxis dataKey="sell" />
+          <Tooltip />
+        </LineChart>
+      </div>
 
-      <BarChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="month" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="investment" stackId="a" fill="#8884d8" />
-        <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
-      </BarChart>
+      <div>
+        <p className="title-color">Investment VS Revenue</p>
+
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="month" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="investment" stackId="a" fill="#8884d8" />
+          <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
+        </BarChart>
+      </div>
     </div>
   );
 };

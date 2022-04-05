@@ -26,16 +26,15 @@ const Home = () => {
       <div className="row row-cols-1 row-cols-md-2 g-4">
         <div className="col">
           <div className="card">
-            <h1>Your Next Smart Watch</h1>
-            <h1>Your Next Smart Watch</h1>
+            <div className="mt-5 product-show">
+            <h1 className="mt-5">Smart Watch</h1>
+            <h1 className="my-5 text-primary">Your Everyday Life Assistant</h1>
 
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
               <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+              To make your everyday life easier,Smart Watch supports features like, Heart Rate Measure, Message Notification, Step Count,sleep tracking and  pressure monitoring.
               </p>
+            </div>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ import About from './components/About/About';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="container">
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}>Home</Route>

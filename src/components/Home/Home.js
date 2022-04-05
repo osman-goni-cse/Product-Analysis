@@ -17,7 +17,9 @@ const Home = () => {
 
   const [reviews, setReviews] = useReviews();
 
-  let count = 0;
+  const newReview = reviews.slice(0, 3);
+  console.log(newReview);
+
 
   return (
     <div className="mt-5">
@@ -51,14 +53,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <h3 className="text-center mt-2">
-        Our Customer Reviews: {reviews.length}{" "}
+      <h3 className="text-center my-5">
+        Our Customer Reviews( {newReview.length})
       </h3>
 
       <div className="row row-cols-1 row-cols-md-3 g-3 home-review">
-        {reviews.map((review) => (
+        {newReview.map((review) => (
           <Review key={review.id} review={review}>
-            {" "}
+            
           </Review>
         ))}
         

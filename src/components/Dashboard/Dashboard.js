@@ -64,7 +64,6 @@ const Dashboard = () => {
         <XAxis dataKey="month" />
         <YAxis dataKey="sell" />
         <Tooltip />
-        
       </LineChart>
 
       <BarChart

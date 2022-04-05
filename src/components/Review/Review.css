@@ -1,5 +1,8 @@
 .main-review-container {
-  /* border: 1px solid sandybrown; */
+  border: 2px solid sandybrown;
+  width: 32%;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 .review-container {

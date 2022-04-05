@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useReviews from "../../hooks/useReviews";
 import Review from "../Review/Review";
 import './Home.css'
 
@@ -12,7 +13,9 @@ const Home = () => {
       .then((data) => setAnalysisProduct(data));
   }, []);
 
-  console.log(analysisProduct);
+  // console.log(analysisProduct);
+
+  const [reviews, setReviews] = useReviews();
 
   return (
     <div className="mt-5">
@@ -48,10 +51,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <h3 className="text-center mt-2">Our Customer Reviews</h3>
+      <h3 className="text-center mt-2">Our Customer Reviews: {reviews.length} </h3>
+      
       <div className="row row-cols-3 row-cols-md-3 g-4">
-        <Review></Review>
-        
+        {
+          reviews.map(review => <Review key={review.id} review={review}> </Review>)
+        }
       </div>
       <Link to='/reviews'>
           <button className="btn btn-primary">See All reviews</button>

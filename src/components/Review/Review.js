@@ -1,7 +1,10 @@
 import React from "react";
 import './Review.css'
 
-const Review = () => {
+const Review = (props) => {
+  const {name, comment} = props.review;
+  // console.log(props);
+
   return (
     <div className="col custom">
       <div className="card">
@@ -19,7 +22,7 @@ const Review = () => {
                   className="float-left"
                   href="https://maniruzzaman-akash.blogspot.com/p/contact.html"
                 >
-                  <strong className="mx-5">Maniruzzaman Akash</strong>
+                  <strong className="mx-5">{name}</strong>
                 </a>
                 <span className="float-right">
                   <i className="text-warning fa fa-star"></i>
@@ -39,12 +42,7 @@ const Review = () => {
               </p>
               <div className="clearfix"></div>
               <p>
-                Lorem Ipsum is simply dummy text of the pr make but also the
-                leap into electronic typesetting, remaining essentially
-                unchanged. It was popularised in the 1960s with the release of
-                Letraset sheets containing Lorem Ipsum passages, and more
-                recently with desktop publishing software like Aldus PageMaker
-                including versions of Lorem Ipsum.
+                {comment}
               </p>
              
             </div>

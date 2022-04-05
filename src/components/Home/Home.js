@@ -53,7 +53,7 @@ const Home = () => {
         </div>
       </div>
       <h3 className="text-center my-5">
-        Our Customer Reviews( {newReview.length})
+        Our Customer Reviews({newReview.length})
       </h3>
 
       <div className="row row-cols-1 row-cols-md-3 g-3 home-review">
